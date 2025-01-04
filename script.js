@@ -48,3 +48,20 @@ window.addEventListener('resize', () => {
 
 createParticles();
 drawParticles();
+
+
+// Selecciona el menú y las líneas
+const menu = document.getElementById('menu');
+const lines = menu.querySelectorAll('.line');
+const navbar = document.getElementById('navbar');
+
+// Agrega un evento de clic al menú
+menu.addEventListener('click', () => {
+    // Alterna la clase "active" en cada línea
+    lines.forEach(line => {
+        line.classList.toggle('active');
+    });
+
+    navbar.classList.toggle('active');
+
+});
