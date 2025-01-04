@@ -1,0 +1,174 @@
+:root {
+    --font-text: "Montserrat", serif;
+    --font-headings: "Source Code Pro", serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #111;
+    color: #EEE;
+}
+
+header {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+p {
+    font-family: var(--font-text);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: var(--font-headings);
+}
+
+h1 {
+    font-size: 7rem;
+    color: transparent;
+    -webkit-text-stroke: 1px #eee;
+    animation: fadeInUp .8s ease-in-out forwards;
+}
+
+h1 span {
+    color: #EEE;
+    animation: glow 1.5s ease-in-out infinite alternate;
+}
+
+h1+span {
+    opacity: 0;
+    font-size: 3rem;
+    font-family: "Montserrat", serif;
+    animation: fadeInUp .8s ease-in-out forwards .5s;
+}
+
+
+nav {
+    padding: 1rem 2rem;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 10;
+    display: flex;
+    justify-content: end;
+    background-color: #111;
+}
+
+nav ul {
+    display: flex;
+    padding: 0 1rem;
+    gap: 2rem;
+    list-style: none;
+    width: 100%;
+    max-width: 600px;
+    justify-content: space-between;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-family: var(--font-text);
+    cursor: pointer;
+    display: block;
+    padding: .8rem 0;
+    color: #EEE;
+    position: relative; /* Necesario para el borde */
+    overflow: hidden;
+}
+
+nav ul li a::before {
+    content: ''; /* Crea un elemento vacío */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%; /* Comienza sin borde visible */
+    height: 2px; /* Grosor del borde */
+    background-color: #EEE; /* Color del borde */
+    transition: width 0.3s ease-in-out; /* Transición suave para el crecimiento */
+}
+
+nav ul li a:hover::before {
+    width: 100%; /* Al hacer hover, el borde se expande al 100% */
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 20px #eee;
+    }
+
+    to {
+        text-shadow: 0 0 30px #eee, 0 0 10px #fff;
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+        /* Posición inicial */
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+        /* Posición final */
+    }
+}
+
+
+#particle-canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+
+main {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+section {
+    width: 100%;
+    min-height: 100vh;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+h2 {
+    font-size: 4rem;
+    position: relative;
+    line-height: 3rem;
+}
+
+h2 > span {
+    position: absolute;
+    inset: 0;
+    font-size: 6.5rem;
+    font-weight: bold;
+    color: #EEE3;
+}
