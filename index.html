@@ -33,8 +33,9 @@
             <h1>Facundo Garcia</h1>
             <span>&gt;</span>
         </div>
-
-        <span>Desarrollador Web</span>
+        <div class="header__info">
+            <span class="typewriter">Desarrollador Web</span>
+        </div>
     </header>
     <main>
         <section id="about-me">
@@ -47,20 +48,105 @@
         </section>
         <section id="projects">
             <h2>PROYECTOS <span>PROYECTOS</span></h2>
+            <div class="filters">
+                <ul>
+                    <li data-filter="dev">Desarrollo Web</li>
+                    <li data-filter="design">Diseño Web</li>
+                    <li data-filter="all">Todos</li>
+                </ul>
+            </div>
             <div class="projects__cards">
-                <div class="card">
+                <div class="card" data-category="dev design">
                     <div class="card__img">
-                        <img src="images/pasteleria__vanessa/complete.png" alt="">
+                        <div class="card__img--website">
+                            <img src="images/pasteleria__vanessa/complete.png" alt="">
+                        </div>
+                    </div>
+                    <div class="card__info">
+                        <h3 class="card__info--title">Sitio Web | Pastelería Vanessa</h3>
+                        <h4>Descripción:</h4>
+                        <p class="card__info--desc">Página web interactiva para una pastelería, donde los clientes pueden explorar el catálogo de productos y ponerse en contacto para realizar pedidos.
+                        </p>
+                        <h4>Tecnologías Empleadas:</h4>
+                        <ul class="card__info--tech">
+                            <li class="html"><img src="icon/html.png" alt="" title="HTML"></li>
+                            <li class="css"><img src="icon/css.png" alt="" title="CSS"></li>
+                            <li class="js"><img src="icon/js.png" alt="" title="Javascript"></li>
+                        </ul>
+                        <h4>Funciones Realizadas:</h4>
+                        <ul class="card__info--functions">
+                            <li><img src="icon/checkbox--check.png" alt=""><span>Desarrollo Web</span></li>
+                            <li><img src="icon/checkbox--check.png" alt=""><span>Diseño Web</span></li>
+                        </ul>
+                        <h4>Ver sitio:</h4>
+                        <div class="card__info--links">
+                            <a href="https://pasteleriavanessa.com" target="_blank">
+                                <img src="icon/link.png" class="icon" alt=""> 
+                                <span>pasteleriavanessa.com</span> 
+                            </a>
+                        </div>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card"data-category="dev design">
                     <div class="card__img">
-                        <img src="images/rebotalandia/complete.png" alt="">
+                        <div class="card__img--website">
+                            <img src="images/rebotalandia/complete.png" alt="">
+                        </div>
+                    </div>
+                    <div class="card__info">
+                        <h3 class="card__info--title">Sitio Web | Rebotalandia</h3>
+                        <h4>Descripción:</h4>
+                        <p class="card__info--desc">Página web interactiva para una pastelería, donde los clientes pueden explorar el catálogo de productos y ponerse en contacto para realizar pedidos.
+                        </p>
+                        <h4>Tecnologías Empleadas:</h4>
+                        <ul class="card__info--tech">
+                            <li class="html"><img src="icon/html.png" alt="" title="HTML"></li>
+                            <li class="css"><img src="icon/css.png" alt="" title="CSS"></li>
+                            <li class="js"><img src="icon/js.png" alt="" title="Javascript"></li>
+                        </ul>
+                        <h4>Funciones Realizadas:</h4>
+                        <ul class="card__info--functions">
+                            <li><img src="icon/checkbox--check.png" alt=""><span>Desarrollo Web</span></li>
+                            <li><img src="icon/checkbox--check.png" alt=""><span>Diseño Web</span></li>
+                        </ul>
+                        <h4>Ver sitio:</h4>
+                        <div class="card__info--links">
+                            <a href="https://pasteleriavanessa.com" target="_blank">
+                                <img src="icon/link.png" class="icon" alt=""> 
+                                <span>pasteleriavanessa.com</span> 
+                            </a>
+                        </div>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card" data-category="dev">
                     <div class="card__img">
-                        <img src="images/portafolio/complete.png" alt="">
+                        <div class="card__img--website">
+                            <img src="images/portafolio/complete.png" alt="">
+                        </div>
+                    </div>
+                    <div class="card__info">
+                        <h3 class="card__info--title">Portafolio Web | Diseñadora</h3>
+                        <h4>Descripción:</h4>
+                        <p class="card__info--desc">Página web interactiva para una pastelería, donde los clientes pueden explorar el catálogo de productos y ponerse en contacto para realizar pedidos.
+                        </p>
+                        <h4>Tecnologías Empleadas:</h4>
+                        <ul class="card__info--tech">
+                            <li class="html"><img src="icon/html.png" alt="" title="HTML"></li>
+                            <li class="css"><img src="icon/css.png" alt="" title="CSS"></li>
+                            <li class="js"><img src="icon/js.png" alt="" title="Javascript"></li>
+                        </ul>
+                        <h4>Funciones Realizadas:</h4>
+                        <ul class="card__info--functions">
+                            <li><img src="icon/checkbox--check.png" alt=""><span>Desarrollo Web</span></li>
+                            <li><img src="icon/checkbox.png" alt=""><span>Diseño Web</span></li>
+                        </ul>
+                        <h4>Ver sitio:</h4>
+                        <div class="card__info--links">
+                            <a href="https://julieta-castillo.github.io/portafolio/" target="_blank">
+                                <img src="icon/link.png" class="icon" alt=""> 
+                                <span>julieta-castillo.github.io/portafolio/</span> 
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>

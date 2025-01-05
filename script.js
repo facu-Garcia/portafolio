@@ -50,18 +50,52 @@ createParticles();
 drawParticles();
 
 
-// Selecciona el menú y las líneas
 const menu = document.getElementById('menu');
 const lines = menu.querySelectorAll('.line');
 const navbar = document.getElementById('navbar');
 
-// Agrega un evento de clic al menú
 menu.addEventListener('click', () => {
-    // Alterna la clase "active" en cada línea
     lines.forEach(line => {
         line.classList.toggle('active');
     });
 
     navbar.classList.toggle('active');
 
+});
+
+
+
+const filterItems = document.querySelectorAll(".filters li");
+
+filterItems.forEach(item => {
+    item.addEventListener("click", () => {
+        filterItems.forEach(li => li.classList.remove("active"));
+
+        item.classList.add("active");
+    });
+});
+
+const filters = document.querySelectorAll(".filters li"); // Seleccionar los filtros
+const projects = document.querySelectorAll(".projects__cards .card"); // Seleccionar las tarjetas
+
+filters.forEach(filter => {
+    filter.addEventListener("click", () => {
+        const category = filter.getAttribute("data-filter"); // Obtener la categoría seleccionada
+
+        // Activar solo el filtro seleccionado
+        filters.forEach(f => f.classList.remove("active"));
+        filter.classList.add("active");
+
+        // Mostrar/Ocultar proyectos según la categoría
+        projects.forEach(project => {
+            const projectCategory = project.getAttribute("data-category");
+
+            // Mostrar proyecto si pertenece a la categoría seleccionada
+            if (projectCategory.includes(category) || category === "all") {
+                project.style.display = "block"; // Mostrar
+            } else {
+                project.style.display = "none"; // Ocultar
+            }
+        });
+    });
 });
