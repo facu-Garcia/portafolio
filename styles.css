@@ -79,7 +79,7 @@ h1 {
     white-space: nowrap;
     overflow: hidden;
     border-right: 3px solid #EEE;
-    animation: typewriter 5s steps(40, end),
+    animation: typewriter 3s steps(40, end),
         blink-caret .9s step-end infinite;
 }
 
@@ -380,7 +380,7 @@ h2:hover>span {
 }
 
 .card__info .card__info--tech li {
-    width: 35px;
+    width: clamp(2.188rem, 2.002rem + 0.901vw, 2.813rem);
     border-radius: 50%;
     background-color: #EEE;
     padding: .2rem;
