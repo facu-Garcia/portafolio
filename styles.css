@@ -79,10 +79,8 @@ h1 {
     white-space: nowrap;
     overflow: hidden;
     border-right: 3px solid #EEE;
-    /* 
-    animation: typewriter 5s steps(40, end), 
-    blink-caret .9s step-end infinite;
-    */
+    animation: typewriter 5s steps(40, end),
+        blink-caret .9s step-end infinite;
 }
 
 @keyframes typewriter {
@@ -255,7 +253,7 @@ section {
 }
 
 #projects {
-    gap: 5rem;
+    gap: clamp(3rem, 2.405rem + 2.883vw, 5rem);
 }
 
 h2 {
@@ -382,7 +380,7 @@ h2:hover>span {
 }
 
 .card__info .card__info--tech li {
-    width: 45px;
+    width: 35px;
     border-radius: 50%;
     background-color: #EEE;
     padding: .2rem;
@@ -405,6 +403,17 @@ h2:hover>span {
     background-color: #ffdf00;
 }
 
+.card__info .card__info--tech li.php {
+    background-color: #8892bd;
+}
+
+.card__info .card__info--tech li.h {
+    background-color: #6c44cd;
+}
+
+.card__info .card__info--tech li.github {
+    background-color: #eeeeee;
+}
 
 .card__info .card__info--tech li.html:hover {
     box-shadow: 0px 0px 6px 3px #ff4500ee;
@@ -417,6 +426,19 @@ h2:hover>span {
 .card__info .card__info--tech li.js:hover {
     box-shadow: 0px 0px 6px 3px #ffdf00ee;
 }
+
+.card__info .card__info--tech li.php:hover {
+    box-shadow: 0px 0px 6px 3px #8892bdee;
+}
+
+.card__info .card__info--tech li.h:hover {
+    box-shadow: 0px 0px 6px 3px #6c44cdee;
+}
+
+.card__info .card__info--tech li.github:hover {
+    box-shadow: 0px 0px 6px 3px #eeeeeeee;
+}
+
 
 .card__info .card__info--tech li img {
     width: 100%;
@@ -459,7 +481,7 @@ h2:hover>span {
     gap: clamp(1rem, 0.703rem + 1.441vw, 2rem);
     flex-wrap: wrap;
     font-size: clamp(1rem, 0.941rem + 0.288vw, 1.2rem);
-    font-family: var(--font-text)
+    font-family: var(--font-text);
 }
 
 .filters li {
@@ -479,8 +501,6 @@ h2:hover>span {
     color: #EEE;
     background-color: #333;
 }
-
-
 
 @media screen and (max-width: 860px) {
     h1 {
