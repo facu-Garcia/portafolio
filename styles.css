@@ -6,7 +6,7 @@
     --color-css: #244be3ff;
     --color-js: #ffdf00ff;
     --color-php: #8892bdff;
-    --color-h: #6c44cdff;
+    --color-hostinger: #6c44cdff;
     --color-github: #eeeeeeff;
     --color-bootstrap: #6a06f2ff;
     --color-java: #ee222bff;
@@ -20,7 +20,7 @@
     --soft-css: #244be3aa;
     --soft-js: #ffdf00aa;
     --soft-php: #8892bdaa;
-    --soft-h: #6c44cdaa;
+    --soft-hostinger: #6c44cdaa;
     --soft-github: #eeeeeeaa;
     --soft-bootstrap: #6a06f2aa;
     --soft-java: #ee222bff;
@@ -283,7 +283,7 @@ main {
 section {
     width: 100%;
     min-height: 100vh;
-    padding: 4rem 2rem;
+    padding: 4rem clamp(1rem, 0.737rem + 1.404vw, 2rem);
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -353,19 +353,20 @@ h2:hover>span {
 .about-me__skills {
     width: 100%;
     display: flex;
-    gap: 3rem;
+    gap: clamp(2rem, 1.737rem + 1.404vw, 3rem);
     justify-content: center;
     flex-wrap: wrap;
 
 }
 
 .about-me__skills .skills__card {
-    width: 180px;
+    width: clamp(8.75rem, 8.257rem + 2.632vw, 10.625rem);
     display: flex;
     flex-direction: column;
-    padding: 2rem;
-    gap: 1rem;
+    padding: 2rem clamp(1rem, 0.737rem + 1.404vw, 2rem);
+    gap: .5rem;
     transition: box-shadow .25s ease-out;
+    cursor: pointer;
 }
 
 .about-me__skills .skills__card:hover .card--img img {
@@ -390,8 +391,8 @@ h2:hover>span {
     background-color: var(--color-php);
 }
 
-.h {
-    background-color: var(--color-h);
+.hostinger {
+    background-color: var(--color-hostinger);
 }
 
 .github {
@@ -510,6 +511,14 @@ h2:hover>span {
     box-shadow: 0 0 10px 5px var(--color-github);
 }
 
+.skills__card.card--hostinger {
+    box-shadow: 0 0 6px 3px var(--soft-hostinger);
+}
+
+.skills__card.card--hostinger:hover {
+    box-shadow: 0 0 10px 5px var(--color-hostinger);
+}
+
 
 .about-me__skills .skills__card .card--img {
     width: 100%;
@@ -530,14 +539,14 @@ h2:hover>span {
     width: 100%;
     height: 10px;
     border-radius: 4px;
-    border: 1px solid #EEE3;
+    border: 1px solid #EEE;
     display: flex;
     justify-content: start;
     overflow: hidden;
 }
 
 .about-me__skills .skills__card .card--bar .bar {
-    background-color: #EEEA;
+    background-color: #EEEE;
 }
 
 .about-me__skills .skills__card .card--bar .bar--20 {
@@ -593,7 +602,7 @@ h2:hover>span {
 .projects__cards .card {
     display: flex;
     flex-direction: column;
-    width: clamp(18.75rem, 15.034rem + 18.018vw, 31.25rem);
+    width: clamp(18.75rem, 15.034rem + 18.018vw, 20.25rem);
     border: 1px solid #333;
     background-color: #333;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -619,7 +628,7 @@ h2:hover>span {
 .projects__cards .card .card__img {
     padding: 2rem;
     width: 100%;
-    height: clamp(12.5rem, 10.642rem + 9.009vw, 18.75rem);
+    height: 200px;
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -664,21 +673,23 @@ h2:hover>span {
 }
 
 .projects__cards .card .card__info {
-    font-size: .9rem;
+    font-size: .8rem;
 }
 
 .projects__cards .card .card__info .icon {
-    width: 30px;
+    width: 20px;
 }
 
 .card__info .card__info--tech {
     display: flex;
+    justify-content: start;
     list-style: none;
-    gap: 1rem;
+    gap: .8rem;
+    width: 100%;
 }
 
 .card__info .card__info--tech li {
-    width: clamp(2.188rem, 2.002rem + 0.901vw, 2.813rem);
+    width: clamp(2.188rem, 2.105rem + 0.439vw, 2.5rem);
     border-radius: 50%;
     background-color: #EEE;
     padding: .2rem;
@@ -707,7 +718,7 @@ h2:hover>span {
 }
 
 .card__info .card__info--tech li.h {
-    background-color: var(--color-h);
+    background-color: var(--color-hostinger);
 }
 
 .card__info .card__info--tech li.github {
@@ -766,7 +777,7 @@ h2:hover>span {
 }
 
 .card__info .card__info--functions img {
-    width: 30px;
+    width: 20px;
 }
 
 .filters {
