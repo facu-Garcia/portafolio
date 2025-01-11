@@ -14,6 +14,11 @@
     --color-node: #8fc708ff;
     --color-vscode: #087ac1ff;
     --color-git: #f15639ff;
+    --color-sqlserver: #eeeeeeff;
+    --color-mysql: #025d88ff;
+    --color-figma: #2b2d34ff;
+    --color-photoshop: #001833ff;
+    --color-illustrator: #300000ff;
 
 
     --soft-html: #ff4500aa;
@@ -23,11 +28,16 @@
     --soft-hostinger: #6c44cdaa;
     --soft-github: #eeeeeeaa;
     --soft-bootstrap: #6a06f2aa;
-    --soft-java: #ee222bff;
-    --soft-python: #30587fff;
+    --soft-java: #ee222baa;
+    --soft-python: #30587faa;
     --soft-node: #8fc708ff;
     --soft-vscode: #429cd5aa;
     --soft-git: #f15639aa;
+    --soft-sqlserver: #eeeeeeaa;
+    --soft-mysql: #025d88aa;
+    --soft-figma: #2b2d34aa;
+    --soft-photoshop: #001833aa;
+    --soft-illustrator: #300000aa;
 }
 
 * {
@@ -70,11 +80,11 @@ h5 {
 }
 
 h3 {
-    font-size: 1.8rem;
+    font-size: clamp(1.4rem, 1.295rem + 0.561vw, 1.8rem);
 }
 
 h4 {
-    font-size: 1.2rem;
+    font-size: clamp(1.1rem, 1.074rem + 0.14vw, 1.2rem);
 }
 
 h5 {
@@ -289,7 +299,7 @@ section {
     text-align: center;
     justify-content: center;
     align-items: center;
-    gap: clamp(3rem, 2.405rem + 2.883vw, 5rem);
+    gap: clamp(3rem, 2.737rem + 1.404vw, 4rem);
 }
 
 h2 {
@@ -363,7 +373,8 @@ h2:hover>span {
     width: clamp(8.75rem, 8.257rem + 2.632vw, 10.625rem);
     display: flex;
     flex-direction: column;
-    padding: 2rem clamp(1rem, 0.737rem + 1.404vw, 2rem);
+    justify-content: center;
+    padding: 2rem clamp(1rem, 0.868rem + 0.702vw, 1.5rem);
     gap: .5rem;
     transition: box-shadow .25s ease-out;
     cursor: pointer;
@@ -422,6 +433,27 @@ h2:hover>span {
 .git {
     background-color: var(--color-git);
 }
+
+.sqlserver {
+    background-color: var(--color-sqlserver);
+}
+
+.mysql {
+    background-color: var(--color-mysql);
+}
+
+.figma {
+    background-color: var(--color-figma);
+}
+
+.photoshop {
+    background-color: var(--color-photoshop);
+}
+
+.illustrator {
+    background-color: var(--color-illustrator);
+}
+
 
 .skills__card.card--html {
     box-shadow: 0 0 6px 3px var(--soft-html);
@@ -518,6 +550,47 @@ h2:hover>span {
 .skills__card.card--hostinger:hover {
     box-shadow: 0 0 10px 5px var(--color-hostinger);
 }
+
+.skills__card.card--sqlserver {
+    box-shadow: 0 0 6px 3px var(--soft-sqlserver);
+}
+
+.skills__card.card--sqlserver:hover {
+    box-shadow: 0 0 10px 5px var(--color-sqlserver);
+}
+
+.skills__card.card--mysql {
+    box-shadow: 0 0 6px 3px var(--soft-mysql);
+}
+
+.skills__card.card--mysql:hover {
+    box-shadow: 0 0 10px 5px var(--color-mysql);
+}
+
+.skills__card.card--figma {
+    box-shadow: 0 0 6px 3px var(--soft-figma);
+}
+
+.skills__card.card--figma:hover {
+    box-shadow: 0 0 10px 5px var(--color-figma);
+}
+
+.skills__card.card--photoshop {
+    box-shadow: 0 0 6px 3px var(--soft-photoshop);
+}
+
+.skills__card.card--photoshop:hover {
+    box-shadow: 0 0 10px 5px var(--color-photoshop);
+}
+
+.skills__card.card--illustrator {
+    box-shadow: 0 0 6px 3px var(--soft-illustrator);
+}
+
+.skills__card.card--illustrator:hover {
+    box-shadow: 0 0 10px 5px var(--color-illustrator);
+}
+
 
 
 .about-me__skills .skills__card .card--img {
