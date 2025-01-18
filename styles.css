@@ -925,7 +925,7 @@ h2:hover>span {
 .projects__cards .card {
     display: flex;
     flex-direction: column;
-    width: clamp(18.75rem, 15.034rem + 18.018vw, 20.25rem);
+    width: clamp(18.75rem, 17.895rem + 4.561vw, 22rem);
     border: 1px solid #333;
     background-color: #333;
     transition:
@@ -996,10 +996,7 @@ h2:hover>span {
     padding: 2rem;
     background-color: #111;
     text-align: left;
-}
-
-.projects__cards .card .card__info {
-    font-size: .8rem;
+    font-size: .85rem;
 }
 
 .projects__cards .card .card__info .icon {
