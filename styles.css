@@ -934,7 +934,7 @@ h2:hover>span {
         transform .5s ease-in-out;
 }
 
-.card:hover {
+.projects__cards .card:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 15px #EEE2;
 }
