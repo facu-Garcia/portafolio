@@ -100,3 +100,38 @@ filters.forEach(filter => {
     });
 });
 
+// Seleccionamos todos los elementos con la clase "animate-me"
+const elements = document.querySelectorAll('.animate-me');
+// Configuración del Intersection Observer
+const options = {
+    root: null, // Observamos el viewport
+    rootMargin: '0px',  // Sin margen adicional
+    threshold: 0.2 // Se activa cuando el 20% del elemento es visible
+};
+
+// Función de callback que se ejecutará cuando el umbral del 20% sea alcanzado
+const callback = (entries, observer) => {
+    entries.forEach((entry, index) => {
+        if (entry.isIntersecting) {
+            // Si es una tarjeta, aplicamos un retraso dinámico
+            if (entry.target.classList.contains('card')) {
+                const delay = index * 200; // Retraso en milisegundos
+                setTimeout(() => {
+                    entry.target.classList.add('visible');
+                }, delay);
+            } else {
+                // Para otros elementos, aplicamos la clase directamente
+                entry.target.classList.add('visible');
+            }
+        } 
+    });
+};
+
+
+// Crear el Intersection Observer
+const observer = new IntersectionObserver(callback, options);
+
+// Observar todos los elementos seleccionados
+elements.forEach(element => {
+    observer.observe(element);
+});

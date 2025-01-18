@@ -11,6 +11,9 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
         rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="48x48" href="favicon.png">
+    <link rel="icon" type="image/x-icon" href="favicon--ico.ico">
+
 </head>
 
 <body>
@@ -18,6 +21,7 @@
         <nav>
             <ul id="navbar">
                 <li><a href="#about-me">Sobre Mi</a></li>
+                <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Proyectos</a></li>
                 <li><a href="#contact">Contacto</a></li>
             </ul>
@@ -37,9 +41,9 @@
     </header>
     <main>
         <section id="about-me">
-            <h2>SOBRE MI <span>SOBRE MI</span></h2>
+            <h2 class="animate-me">SOBRE MI <span>SOBRE MI</span></h2>
             <div class="about-me--content">
-                <div class="about-me__text">
+                <div class="about-me__text animate-me">
                     <p>Hola, soy <span>Facundo García</span>, un apasionado desarrollador web con experiencia
                         predominante
                         en el <span>Desarrollo Frontend</span>, complementada con conocimientos de <span>Desarrollo
@@ -51,142 +55,164 @@
                     <p>Estoy en constante aprendizaje, explorando nuevas tecnologías y herramientas que me permitan
                         mejorar
                         y expandir mis habilidades. </p>
+
+                    <ul>
+                        <li><strong>Nombre:</strong> Jesús Facundo</li>
+                        <li><strong>Apellido:</strong> Rivera García</li>
+                        <li><strong>Edad:</strong> 21 años</li>
+                        <li><strong>Ubicación:</strong> Cuautitlán Izcalli, México</li>
+                    </ul>
+                </div>
+
+                <div class="about-me__img animate-me">
+                    <a class="img--cv" href="" target="_blank">
+                        <img src="images/all/img--example.png" alt="">
+                        <div class="cv--button"><span><img src="icon/open.png" alt=""></span><span>Ver CV</span></div>
+                    </a>
                 </div>
             </div>
 
 
             <div class="about-me--content">
-                <h3>INFORMACIÓN PERSONAL</h3>
-                <div class="about-me__personal">
-
-                </div>
-                <div class="about-me__personal">
-
-                </div>
-            </div>
-
-
-            <div class="about-me--content">
-                <h2>SKILLS <span>SKILLS</span></h2>
-                <h3>FRONTEND</h3>
-                <div class="about-me__skills">
-                    <div class="skills__card card--html">
-                        <div class="card--circular-progress">
-                            <div class="card--img html">
-                                <img src="icon/html.png" alt="">
-                            </div>
-                        </div>
-                        <h4>HTML</h4>
-                        <span>Experto</span>
-                        <div class="card--bar">
-                            <div class="bar bar--100"></div>
-                        </div>
+                <h3 class="animate-me">EDUCACIÓN</h3>
+                <div class="education__container">
+                    <div class="education__card card animate-me">
+                        <h4>Licenciatura en Ingeniería en Sistemas Computacionales</h4>
+                        <span>Sep 2021 - Jul 2024</span>
+                        <span>Universidad de Cuautitlán Izcalli</span>
                     </div>
+                    <div class="education__line card animate-me">
 
-                    <div class="skills__card card--css">
-                        <div class="card--circular-progress">
-                            <div class="card--img css">
-                                <img src="icon/css.png" alt="">
-                            </div>
-                        </div>
-                        <h4>CSS</h4>
-                        <span>Avanzado</span>
-                        <div class="card--bar">
-                            <div class="bar bar--80"></div>
-                        </div>
                     </div>
-
-                    <div class="skills__card card--js">
-                        <div class="card--circular-progress">
-                            <div class="card--img js">
-                                <img src="icon/js.png" alt="">
-                            </div>
-                        </div>
-                        <h4>Javascript</h4>
-                        <span>Básico</span>
-                        <div class="card--bar">
-                            <div class="bar bar--40"></div>
-                        </div>
-                    </div>
-
-                    <div class="skills__card card--bootstrap">
-                        <div class="card--circular-progress">
-                            <div class="card--img bootstrap">
-                                <img src="icon/bootstrap.png" alt="">
-                            </div>
-                        </div>
-                        <h4>Bootstrap</h4>
-                        <span>Básico</span>
-                        <div class="card--bar">
-                            <div class="bar bar--40"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <h3>BACKEND</h3>
-                <div class="about-me__skills">
-                    <div class="skills__card card--java">
-                        <div class="card--circular-progress">
-                            <div class="card--img java">
-                                <img src="icon/java.png" alt="">
-                            </div>
-                        </div>
-                        <h4>Java</h4>
-                        <span>Intermedio</span>
-                        <div class="card--bar">
-                            <div class="bar bar--60"></div>
-                        </div>
-                    </div>
-
-                    <div class="skills__card card--python">
-                        <div class="card--circular-progress">
-                            <div class="card--img python">
-                                <img src="icon/python.png" alt="">
-                            </div>
-                        </div>
-                        <h4>Python</h4>
-                        <span>Intermedio</span>
-                        <div class="card--bar">
-                            <div class="bar bar--60"></div>
-                        </div>
-                    </div>
-
-                    <div class="skills__card card--php">
-                        <div class="card--circular-progress">
-                            <div class="card--img php">
-                                <img src="icon/php.png" alt="">
-                            </div>
-                        </div>
-                        <h4>PHP</h4>
-                        <span>Principiante </span>
-                        <div class="card--bar">
-                            <div class="bar bar--20"></div>
-                        </div>
-                        <!--
-                        <div class="card--button">
-                            <span>Detalles</span>
-                        </div>
-                        -->
-                    </div>
-
-                    <div class="skills__card card--node">
-                        <div class="card--circular-progress">
-                            <div class="card--img node">
-                                <img src="icon/node.png" alt="">
-                            </div>
-                        </div>
-                        <h4>Node.js</h4>
-                        <span>Intermedio</span>
-                        <div class="card--bar">
-                            <div class="bar bar--60"></div>
-                        </div>
+                    <div class="education__card card animate-me">
+                        <h4>Seminario de Diseño Web Responsivo</h4>
+                        <span>Sep 2024 - Dic 2024</span>
+                        <span>Universidad de Cuautitlán Izcalli</span>
                     </div>
                 </div>
             </div>
+        </section>
 
-            <h3>HERRAMIENTAS WEB</h3>
+        <section id="skills">
+            <h2 class="animate-me">SKILLS <span>SKILLS</span></h2>
+            <h3 class="animate-me">FRONTEND</h3>
             <div class="about-me__skills">
-                <div class="skills__card card--vscode">
+                <div class="skills__card card--html card animate-me">
+                    <div class="card--circular-progress">
+                        <div class="card--img html">
+                            <img src="icon/html.png" alt="">
+                        </div>
+                    </div>
+                    <h4>HTML</h4>
+                    <span>Experto</span>
+                    <div class="card--bar">
+                        <div class="bar bar--100"></div>
+                    </div>
+                </div>
+
+                <div class="skills__card card--css card animate-me">
+                    <div class="card--circular-progress">
+                        <div class="card--img css">
+                            <img src="icon/css.png" alt="">
+                        </div>
+                    </div>
+                    <h4>CSS</h4>
+                    <span>Avanzado</span>
+                    <div class="card--bar">
+                        <div class="bar bar--80"></div>
+                    </div>
+                </div>
+
+                <div class="skills__card card--js card animate-me">
+                    <div class="card--circular-progress">
+                        <div class="card--img js">
+                            <img src="icon/js.png" alt="">
+                        </div>
+                    </div>
+                    <h4>Javascript</h4>
+                    <span>Básico</span>
+                    <div class="card--bar">
+                        <div class="bar bar--40"></div>
+                    </div>
+                </div>
+
+                <div class="skills__card card--bootstrap card animate-me">
+                    <div class="card--circular-progress">
+                        <div class="card--img bootstrap">
+                            <img src="icon/bootstrap.png" alt="">
+                        </div>
+                    </div>
+                    <h4>Bootstrap</h4>
+                    <span>Básico</span>
+                    <div class="card--bar">
+                        <div class="bar bar--40"></div>
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="animate-me">BACKEND</h3>
+            <div class="about-me__skills">
+                <div class="skills__card card--java card animate-me">
+                    <div class="card--circular-progress">
+                        <div class="card--img java">
+                            <img src="icon/java.png" alt="">
+                        </div>
+                    </div>
+                    <h4>Java</h4>
+                    <span>Intermedio</span>
+                    <div class="card--bar">
+                        <div class="bar bar--60"></div>
+                    </div>
+                </div>
+
+                <div class="skills__card card--python card animate-me">
+                    <div class="card--circular-progress">
+                        <div class="card--img python">
+                            <img src="icon/python.png" alt="">
+                        </div>
+                    </div>
+                    <h4>Python</h4>
+                    <span>Intermedio</span>
+                    <div class="card--bar">
+                        <div class="bar bar--60"></div>
+                    </div>
+                </div>
+
+                <div class="skills__card card--php card animate-me">
+                    <div class="card--circular-progress">
+                        <div class="card--img php">
+                            <img src="icon/php.png" alt="">
+                        </div>
+                    </div>
+                    <h4>PHP</h4>
+                    <span>Principiante </span>
+                    <div class="card--bar">
+                        <div class="bar bar--20"></div>
+                    </div>
+                    <!--
+                    <div class="card--button">
+                        <span>Detalles</span>
+                    </div>
+                    -->
+                </div>
+
+                <div class="skills__card card--node card animate-me">
+                    <div class="card--circular-progress">
+                        <div class="card--img node">
+                            <img src="icon/node.png" alt="">
+                        </div>
+                    </div>
+                    <h4>Node.js</h4>
+                    <span>Intermedio</span>
+                    <div class="card--bar">
+                        <div class="bar bar--60"></div>
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="animate-me">HERRAMIENTAS WEB</h3>
+            <div class="about-me__skills">
+                <div class="skills__card card--vscode card animate-me">
                     <div class="card--circular-progress">
                         <div class="card--img vscode">
                             <img src="icon/vscode.png" alt="">
@@ -199,7 +225,7 @@
                     </div>
                 </div>
 
-                <div class="skills__card card--git">
+                <div class="skills__card card--git card animate-me">
                     <div class="card--circular-progress">
                         <div class="card--img git">
                             <img src="icon/git.png" alt="">
@@ -212,7 +238,7 @@
                     </div>
                 </div>
 
-                <div class="skills__card card--github">
+                <div class="skills__card card--github card animate-me">
                     <div class="card--circular-progress">
                         <div class="card--img github">
                             <img src="icon/github.png" alt="">
@@ -225,7 +251,7 @@
                     </div>
                 </div>
 
-                <div class="skills__card card--hostinger">
+                <div class="skills__card card--hostinger card animate-me">
                     <div class="card--circular-progress">
                         <div class="card--img hostinger">
                             <img src="icon/hostinger.png" alt="">
@@ -239,9 +265,9 @@
                 </div>
             </div>
 
-            <h3>BASES DE DATOS</h3>
+            <h3 class="animate-me">BASES DE DATOS</h3>
             <div class="about-me__skills">
-                <div class="skills__card card--sqlserver">
+                <div class="skills__card card--sqlserver card animate-me">
                     <div class="card--circular-progress">
                         <div class="card--img sqlserver">
                             <img src="icon/microsoft-sql-server.png" alt="">
@@ -254,7 +280,7 @@
                     </div>
                 </div>
 
-                <div class="skills__card card--mysql">
+                <div class="skills__card card--mysql card animate-me">
                     <div class="card--circular-progress">
                         <div class="card--img mysql">
                             <img src="icon/mysql.png" alt="">
@@ -268,9 +294,9 @@
                 </div>
             </div>
 
-            <h3>DISEÑO</h3>
+            <h3 class="animate-me">DISEÑO</h3>
             <div class="about-me__skills">
-                <div class="skills__card card--figma">
+                <div class="skills__card card--figma card animate-me">
                     <div class="card--circular-progress">
                         <div class="card--img figma">
                             <img src="icon/figma.png" alt="">
@@ -283,7 +309,7 @@
                     </div>
                 </div>
 
-                <div class="skills__card card--photoshop">
+                <div class="skills__card card--photoshop card animate-me">
                     <div class="card--circular-progress">
                         <div class="card--img photoshop">
                             <img src="icon/photoshop.png" alt="">
@@ -296,7 +322,7 @@
                     </div>
                 </div>
 
-                <div class="skills__card card--illustrator">
+                <div class="skills__card card--illustrator card animate-me">
                     <div class="card--circular-progress">
                         <div class="card--img illustrator">
                             <img src="icon/illustrator.png" alt="">
@@ -309,26 +335,26 @@
                     </div>
                 </div>
             </div>
-
-            </div>
         </section>
+
+
         <section id="projects">
-            <h2>PROYECTOS <span>PROYECTOS</span></h2>
+            <h2 class="animate-me">PROYECTOS <span>PROYECTOS</span></h2>
             <div class="filters">
                 <ul>
-                    <li data-filter="dev">
+                    <li data-filter="dev" class="animate-me">
                         <h3>DESARROLLO</h3>
                     </li>
-                    <li data-filter="design">
+                    <li data-filter="design" class="animate-me">
                         <h3>DISEÑO</h3>
                     </li>
-                    <li data-filter="all">
+                    <li data-filter="all" class="animate-me">
                         <h3>TODOS</h3>
                     </li>
                 </ul>
             </div>
             <div class="projects__cards">
-                <div class="card" data-category="dev design">
+                <div class="card animate-me" data-category="dev design">
                     <div class="card__img">
                         <div class="card__img--website">
                             <img src="images/pasteleria__vanessa/complete.png" alt="">
@@ -362,7 +388,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card" data-category="dev design">
+                <div class="card animate-me" data-category="dev design">
                     <div class="card__img">
                         <div class="card__img--website">
                             <img src="images/rebotalandia/complete.png" alt="">
@@ -396,7 +422,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card" data-category="dev">
+                <div class="card animate-me" data-category="dev">
                     <div class="card__img">
                         <div class="card__img--website">
                             <img src="images/portafolio/complete.png" alt="">
@@ -432,31 +458,34 @@
             </div>
         </section>
         <section id="contact">
-            <h2>CONTACTO <span>CONTACTO</span></h2>
-            <p>Puedes comunicarte conmigo a través de los siguientes medios:</p>
+            <h2 class="animate-me">CONTACTO <span>CONTACTO</span></h2>
+            <p class="animate-me">Puedes comunicarte conmigo a través de los siguientes medios:</p>
             <div class="contact__cards">
-                <a href="https://github.com/facu-Garcia" class="contact__card card--github" target="_blank">
+                <a href="https://github.com/facu-Garcia" class="contact__card card--github card animate-me"
+                    target="_blank">
                     <div class="card--img github">
                         <img src="icon/github.png" alt="">
                     </div>
                     <h4>GitHub</h4>
                 </a>
 
-                <a href="mailto:jesusgaur27@gmail.com" class="contact__card card--gmail">
+                <a href="mailto:jesusgaur27@gmail.com" class="contact__card card--gmail card animate-me">
                     <div class="card--img gmail">
                         <img src="icon/gmail.png" alt="">
                     </div>
-                    <h4>Email</h4>
+                    <h4>Gmail</h4>
                 </a>
 
-                <a href="https://wa.me/525581033464" class="contact__card card--whatsapp" target="_blank">
+                <a href="https://wa.me/525581033464" class="contact__card card--whatsapp card animate-me"
+                    target="_blank">
                     <div class="card--img whatsapp">
                         <img src="icon/whatsapp.png" alt="">
                     </div>
-                    <h4>Teléfono</h4>
+                    <h4>WhatsApp</h4>
                 </a>
 
-                <a href="https://linkedin.com/in/tuusuario" class="contact__card card--linkedin" target="_blank">
+                <a href="https://linkedin.com/in/tuusuario" class="contact__card card--linkedin card animate-me"
+                    target="_blank">
                     <div class="card--img linkedin">
                         <img src="icon/linkedin.png" alt="">
                     </div>
@@ -465,8 +494,45 @@
             </div>
         </section>
     </main>
-    <footer>
 
+    <footer>
+        <div class="container__footer">
+            <div class="footer__item footer--logo">
+                <img src="favicon--500.png" alt="">
+            </div>
+            <ul class="footer__item footer--links">
+                <li><a href="#about-me">Sobre Mi</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Proyectos</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+            <ul class="footer__item footer--social">
+                <li>
+                    <a href="">
+                        <img src="icon/github--black.jpg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="icon/whatsapp--black.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="icon/gmail--black.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="icon/linkedin--black.png" alt="">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer--copyright">
+            <p>&copy; 2025 Facundo Garcia.</p>
+            <p>Todos los derechos reservados.</p>
+        </div>
     </footer>
 </body>
 
